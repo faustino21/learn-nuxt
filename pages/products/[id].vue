@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h2>{{ product.title }}</h2>
-        <!-- <img src={{ product.image }} alt=""> -->
-        <p>{{ product.description }}</p>
+        <ProductDetail :product="product" />
     </div>
 </template>
 
@@ -11,7 +9,7 @@
     const url = `https://fakestoreapi.com/products/` + id
 
     //fetch product
-    const { data:product } = await useFetch(url)
+    const { data: product } = await useFetch(url)
 
     definePageMeta({
         layout: 'products'
