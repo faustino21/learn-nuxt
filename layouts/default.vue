@@ -1,19 +1,19 @@
 <template>
     <div>
-        <header>
-            <nav>
-                <NuxtLink to="/">Tinos NuxtJs</NuxtLink>
-                <ul>
+        <header class="shadow-sm bg-white">
+            <nav class="container mx-auto p-4 flex justify-between">
+                <NuxtLink to="/" class="font-bold">Tinos NuxtJs</NuxtLink>
+                <ul class="flex gap-4">
                     <li><NuxtLink to="/">Home</NuxtLink></li>
                     <li><NuxtLink to="/about">about</NuxtLink></li>
-                    <li><NuxtLink to="/products">products</NuxtLink></li>
+                    <li><NuxtLink to="/products" class="btn">products</NuxtLink></li>
                 </ul>
             </nav>
         </header>
 
         <!-- output page content -->
-        <div>
-            <slot />
+        <div class="container mx-auto p-4">
+            <slot/>
         </div>
     </div>
 </template>

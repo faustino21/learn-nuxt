@@ -10,7 +10,7 @@
     definePageMeta({
         layout: 'products'
     })
-<script>
+</script>
 
 <style scoped>
 
